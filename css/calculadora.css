@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    /*manipular el contenedor como yo lo requiera*/
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    display: grid; /*El grid a todos los elementos que estan como una lista seguida
+    los prepara para que sean visualizados como una grilla o cuadricula*/
+    /*grid-template-columns: 75px 75px 75px 75px;*//*Le dice que esos elementos en la grilla cuantas columnas 
+    va a tener no se lo dice de manera explicita si no de implicita con esto le digo que voy
+    a tener 3 columnas*/
+    grid-template-columns: repeat(4,75px);
+    /*grid-template-rows: 150px 75px 75px 75px 75px 75px;*/
+    grid-template-rows: 150px repeat(5,75px);/*Le dice que esos elementos en la grilla cuantas filas 
+    va a tener*/
+    background-color: #3452da;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow:15px 10px 5px 5px  #000000e0;/*Recibe cuatro argumentos para dar sombra que me van a decir que tan grande
+    quiero que sea mi sombra*/
+
+}
+
+.display {
+    grid-column: span 4; /*le indico el numero de columnas que quiero que ocupe*/
+    padding: 15px;
+    background-color: rgb(206, 226, 243);
+    border-radius: 25px;
+    text-align: right;
+    
+    margin: 10px 10px 10px 10px;
+    box-shadow:0px 0px 0px 10px  #000000e0;/*Recibe cuatro argumentos para dar sombra que me van a decir que tan grande
+    quiero que sea mi sombra*/
+}
+.col-2{
+    grid-column: span 2;
+}
+button{
+    cursor: pointer;
+    margin: 4px;
+    background-color: rgba(60, 253, 253, 0.651);
+    border-radius: 22px;
+    border: none;
+    font-size: 25px;
+    box-shadow:5px 5px 5px 5px  #00000088;/*Recibe cuatro argumentos para dar sombra que me van a decir que tan grande
+    quiero que sea mi sombra*/
+}
+button:active{
+    background-color: aquamarine;
+}
+*{
+    color: rgb(2, 2, 2);
+}
+body{
+    background-color: #bec7f3;
+}
