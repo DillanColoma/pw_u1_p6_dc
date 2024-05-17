@@ -50,7 +50,7 @@ function conceptosJS() {
     const IVA = 15;
     console.log(IVA);
 
-    /*var tipo de dato sirve para modificar aunque esta quedando en des uso porque
+    /*var tipo de dato sirve para modificar aunque esta quedando en desuso porque
     el let maneja de mejor manera la memoria */
     var nombre = "Renato";
     console.log(nombre);
