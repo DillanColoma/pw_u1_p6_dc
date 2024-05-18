@@ -1,15 +1,18 @@
-.container{/*Esta declaracion del container debe ser fija*/
+.container {
+    /*Esta declaracion del container debe ser fija*/
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+
+body {
     background-color: #59abe3;
 }
+
 /*Uso para visualizar los atributos Nombre, Apellido que estan
 guardados en el atributo type en el html.*/
-p:before{
+p:before {
     content: attr(type);
     display: block;
     margin: 3px;
@@ -17,29 +20,49 @@ p:before{
     color: #5a5a5a;
 }
 
-input{
+input {
     width: 300px;
     border: none;
     border-bottom: 2px solid #bebed2;
     background: none;
 }
-input:focus{
+
+input:focus {
     outline: none;
     border-bottom: 2px solid #78788C;
 }
-h2{
+
+h2 {
     margin: 10px 2px;
     width: 180px;
     color: #78788C;
     border-bottom: 3px solid #78788C;
-    
+
 }
 
-.form{
+.form {
     width: 300px;
     height: 425px;
     background-color: #e6e6e6;
     border-radius: 10px;
     padding: 25px 35px;
     box-shadow: 0px 0px 30px 5px #000;
+}
+
+.botonGuardar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #78788C;
+    color: white ;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    
+
 }

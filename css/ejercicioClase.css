@@ -1,0 +1,38 @@
+.container {
+    /*Esta declaracion del container debe ser fija*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 1px;
+    padding: 1px;
+    
+    font-size: 15px;
+    color: #5a5a5a;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(3, 75px);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+input {
+    width: 200px;
+    border-top-left-radius: 1px solid #bebed2;
+    border-top-right-radius: 0.5px solid #bebed2;
+    background: none;
+}
+
+.nombreEspacio {
+    grid-column: span 2;
+    width: 420px;
+}
